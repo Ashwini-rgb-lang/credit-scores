@@ -1,0 +1,132 @@
+
+
+
+/*loan section*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#ececec;
+  color:#111;
+}
+
+.loan-section{
+  width:100%;
+  padding:30px 20px 40px;
+}
+
+.loan-container{
+  max-width:1400px;
+  margin:0 auto;
+}
+
+.loan-title{
+  font-size:34px;
+  font-weight:800;
+  color:#000;
+  margin-bottom:30px;
+}
+
+.loan-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:22px;
+}
+
+.loan-card{
+  background:#fff;
+  border-radius:16px;
+  padding:20px;
+  min-height:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.04);
+  transition:all 0.25s ease;
+}
+
+.loan-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 16px rgba(0,0,0,0.08);
+}
+
+.loan-icon-wrap{
+  width:78px;
+  height:78px;
+  min-width:78px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.loan-icon{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+}
+
+.loan-text{
+  font-size:18px;
+  font-weight:500;
+  line-height:1.3;
+  color:#000;
+}
+
+/* Tablet */
+@media (max-width:1100px){
+
+  .loan-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .loan-icon{
+    width:50px;
+    height:50px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  .loan-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .loan-card{
+    padding:16px;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .loan-icon-wrap{
+    width:64px;
+    height:64px;
+  }
+
+  .loan-icon{
+    width:48px;
+    height:48px;
+  }
+
+  .loan-text{
+    font-size:16px;
+  }
+
+}
+
+
+
+
+
+
+
+
